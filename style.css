@@ -1,0 +1,562 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+body{
+    width: 95%;
+    height: 100vh;
+    background-color: hsl(230, 17%, 14%);
+    overflow: hidden;
+}
+body.light-mode{
+    background-color: hsl(0, 0%, 97%);
+}
+.head-1.light-mode-heads{
+    color: hsl(230, 17%, 14%);
+}
+.head-2.light-mode-heads {
+    color: hsl(230, 17%, 14%);
+}
+
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(4, 42.2vh);
+    grid-template-rows: repeat(4, 20.7vh);
+    justify-content: center;
+    align-content: center;
+    position: absolute;
+    top: 8%;
+    left: 10%;
+}
+
+.head-1{
+    grid-area: 1 / 1 / span 2 / span 3;
+    color: white;
+    line-height: 2em;
+    height: 20.7vh;
+}
+.head-1 h3{
+    font-size: 100%;
+    font-weight: 400;
+    opacity: 0.5;
+}
+/*Theme mode*/
+.toggle-theme{
+    grid-area: 1 / 4 / span 2 / span 3;
+    color: white;
+    margin-left: 10vh;
+    display: inline-block;
+
+}
+.toggle-theme h2{
+    opacity: 0.5;
+    font-size: 100%;
+    display: inline-block;
+    margin-left: 10vh;
+    position: absolute;
+}
+#button-toggle {
+    display: inline-block;
+    background-image: linear-gradient(45deg, rgb(17, 118, 128), rgb(65, 236, 213));
+    height: 3vh;
+    width: 6vh;
+    position: absolute;
+    border-radius: 14vh; 
+    right: 2vh;
+    cursor: pointer;
+}
+#switch{
+    background-color: hsl(230, 17%, 14%);
+    /* background-color: white; */
+    border-radius: 50%;
+    height: 2.1vh;
+    width: 2.1vh;
+    position: absolute;
+    left: 0.5vh;
+    top: 0.4vh;
+    cursor: pointer;
+}
+.facebook-fol{
+    grid-area: 2 / 1 ;
+    background-color: hsl(228, 28%, 20%);
+    margin-top: -6.5vh;
+    height: 30vh;
+    width: 40vh;
+    border-radius: 0.8vh;
+    border-top: hsl(214, 71%, 51%) 0.7vh solid;
+}
+#face-icon{
+    position: absolute;
+    margin-left: 12vh;
+    margin-top: 4vh;
+    display: inline-block;
+}
+.facebook-fol h3 {
+    color: white;
+    opacity: 0.5;
+    display: inline-block;
+    font-size: 85%;
+    position: absolute;
+    left: 16.4vh;
+    margin-top: 4.5vh;
+}
+.facebook-fol h1{
+    color:white;
+    margin-top: 9vh;
+    margin-left: 9.5vh;
+    font-size: 9vh;
+}
+#face-followers{
+    color: white;
+    opacity: 0.5;
+    margin-bottom: 9vh;
+    font-size: 100%;
+    letter-spacing: 0.25em;
+    margin-left: 11vh;
+}
+.facebook-fol h4 {
+    color: hsl(163, 72%, 41%);
+    margin-top: -7vh;
+    font-size: 75%;
+    margin-left: 14vh;
+}
+.twitter-fol{
+    grid-area: 2 / 2 ;
+    background-color: hsl(228, 28%, 20%);
+    margin-top: -6.5vh;
+    height: 30vh;
+    width: 40vh;
+    border-radius: 0.8vh;
+    border-top: hsl(214, 71%, 51%) 0.7vh solid;
+    position: absolute;
+    left: 0.4vh;
+}
+#twitt-icon{
+    position: absolute;
+    margin-left: 12vh;
+    margin-top: 4vh;
+    display: inline-block;
+}
+.twitter-fol h3 {
+    color: white;
+    opacity: 0.5;
+    display: inline-block;
+    font-size: 85%;
+    position: absolute;
+    left: 16.4vh;
+    margin-top: 4.5vh;
+}
+.twitter-fol h1{
+    color:white;
+    margin-top: 9vh;
+    margin-left: 9.5vh;
+    font-size: 9vh;
+}
+#twitt-followers{
+    color: white;
+    opacity: 0.5;
+    margin-bottom: 9vh;
+    font-size: 100%;
+    letter-spacing: 0.37em;
+    margin-left: 11vh;
+}
+.twitter-fol h4 {
+    color: hsl(163, 72%, 41%);
+    margin-top: -7vh;
+    font-size: 75%;
+    margin-left: 14vh;
+}
+.instagram-fol{
+    grid-area: 2 / 3 ;
+    background-color: hsl(228, 28%, 20%);
+    margin-top: -6.5vh;
+    height: 30.8vh;
+    width: 40vh;
+    border-radius: 0.8vh;
+    position: absolute;
+    left: 0.7vh;
+    overflow: hidden;
+}
+#insta-gradient{
+    background-image: linear-gradient(45deg,hsl(37, 97%, 70%) ,hsl(329, 70%, 58%));
+    height: 0.6vh;
+    width: 40vh;
+}
+#insta-icon {
+    position: absolute;
+    margin-left: 12vh;
+    margin-top: 4vh;
+    display: inline-block;
+}
+.instagram-fol h3{
+    color: white;
+    opacity: 0.5;
+    display: inline-block;
+    font-size: 85%;
+    position: absolute;
+    left: 16.4vh;
+    margin-top: 4.5vh;
+}
+.instagram-fol h1 {
+    color:white;
+    margin-top: 9vh;
+    margin-left: 15vh;
+    font-size: 9vh;
+}
+#insta-followers{
+    color: white;
+    opacity: 0.5;
+    margin-bottom: 9vh;
+    font-size: 100%;
+    letter-spacing: 0.37em;
+    margin-left: 11vh;
+}
+.instagram-fol h4 {
+    color: hsl(163, 72%, 41%);
+    margin-top: -7vh;
+    font-size: 75%;
+    margin-left: 14vh;
+}
+.youtube-fol{
+    grid-area: 2 / 4 ;
+    background-color: hsl(228, 28%, 20%);
+    margin-top: -6.5vh;
+    height: 30vh;
+    width: 40vh;
+    border-radius: 0.8vh;
+    position: absolute;
+    left: 0.7vh;
+    overflow: hidden; 
+    border-top: hsl(348, 97%, 39%) 0.7vh solid;
+}
+#yout-icon{
+    position: absolute;
+    margin-left: 12vh;
+    margin-top: 4vh;
+    display: inline-block;
+}
+.youtube-fol h3{
+    color: white;
+    opacity: 0.5;
+    display: inline-block;
+    font-size: 85%;
+    position: absolute;
+    left: 16.4vh;
+    margin-top: 4.5vh;
+}
+.youtube-fol h1 {
+    color:white;
+    margin-top: 9vh;
+    margin-left: 9.5vh;
+    font-size: 9vh;
+}
+#yout-followers{
+    color: white;
+    opacity: 0.5;
+    margin-bottom: 9vh;
+    font-size: 100%;
+    letter-spacing: 0.27em;
+    margin-left: 11vh;
+}
+.youtube-fol h4 {
+    color: hsl(348, 97%, 39%);
+    margin-top: -7vh;
+    font-size: 75%;
+    margin-left: 14vh;
+}
+.head-2{
+    grid-area: 3 / 1;
+    margin-top: 8vh;
+    color: white;
+    font-size: 90%;
+}
+.face-likes-up{
+    grid-area: 4 / 1;
+    background-color: hsl(228, 28%, 20%);
+    margin-top: -6.5vh;
+    height: 13vh;
+    width: 40vh;
+    border-radius: 0.8vh;
+    position: absolute;
+    top: 2.5vh;
+}
+.face-likes-up h3{
+    color: white;
+    opacity: 0.5;
+    font-size: 85%;
+    display: inline-block;
+    margin-left: 4.5vh;
+    margin-top: 2vh;
+}
+.face-likes-up img{
+    position: absolute;
+    bottom: 8.5vh;
+    right: 4vh;
+}
+.face-likes-up h1{
+    color: white;
+    margin-left: 4vh;
+    margin-top: 1.3vh;
+}
+.face-likes-up h4 {
+    display: inline-block;
+    color: hsl(163, 72%, 41%);
+    margin-left: 30vh;
+    position: absolute;
+    bottom: 1.5vh;
+}
+.face-likes-down {
+    grid-area: 4 / 2;
+    background-color: hsl(228, 28%, 20%);
+    margin-top: -6.5vh;
+    height: 13vh;
+    width: 40vh;
+    border-radius: 0.8vh;
+    position: absolute;
+    top: 2.5vh;
+}
+.face-likes-down h3 {
+    color: white;
+    opacity: 0.5;
+    font-size: 85%;
+    display: inline-block;
+    margin-left: 4.5vh;
+    margin-top: 2vh;
+}
+.face-likes-down img {
+    position: absolute;
+    bottom: 8.5vh;
+    right: 4vh;
+}
+.face-likes-down h1 {
+    color: white;
+    margin-left: 4vh;
+    margin-top: 1.3vh;
+}
+.face-likes-down h4 {
+    display: inline-block;
+    color:hsl(356, 69%, 56%);
+    margin-left: 30vh;
+    position: absolute;
+    bottom: 1.5vh;
+}
+.insta-likes-up{
+    grid-area: 4 / 3;
+    background-color: hsl(228, 28%, 20%);
+    margin-top: -6.5vh;
+    height: 13vh;
+    width: 40vh;
+    border-radius: 0.8vh;
+    position: absolute;
+    top: 2.5vh;
+}
+.insta-likes-up h3 {
+    color: white;
+    opacity: 0.5;
+    font-size: 85%;
+    display: inline-block;
+    margin-left: 4.5vh;
+    margin-top: 2vh;
+}
+.insta-likes-up img {
+    position: absolute;
+    bottom: 8.5vh;
+    right: 4vh;
+}
+.insta-likes-up h1 {
+    color: white;
+    margin-left: 4vh;
+    margin-top: 1.3vh;
+}
+.insta-likes-up h4 {
+    display: inline-block;
+    color:hsl(163, 72%, 41%);
+    margin-left: 26vh;
+    position: absolute;
+    bottom: 1.5vh;
+    width: 100%;
+}
+.insta-profile-views-down{
+    grid-area: 4 / 4;
+    background-color: hsl(228, 28%, 20%);
+    margin-top: -6.5vh;
+    height: 13vh;
+    width: 41vh;
+    border-radius: 0.8vh;
+    position: absolute;
+    top: 2.5vh;
+}
+.insta-profile-views-down h3 {
+    color: white;
+    opacity: 0.5;
+    font-size: 85%;
+    display: inline-block;
+    margin-left: 4.5vh;
+    margin-top: 2vh;
+}
+.insta-profile-views-down img {
+    position: absolute;
+    bottom: 8.5vh;
+    right: 4vh;
+}
+.insta-profile-views-down h1 {
+    color: white;
+    margin-left: 4vh;
+    margin-top: 1.3vh;
+}
+.insta-profile-views-down h4 {
+    display: inline-block;
+    color:hsl(163, 72%, 41%);
+    margin-left: 26vh;
+    position: absolute;
+    bottom: 1.5vh;
+    width: 100%;
+}
+.twitt-retwitt{
+    grid-area: 5 / 1;
+    background-color: hsl(228, 28%, 20%);
+    margin-top: -9vh;
+    height: 13vh;
+    width: 40vh;
+    border-radius: 0.8vh;
+    position: absolute;
+    left: -0.1vh;
+}
+.twitt-retwitt h3 {
+    color: white;
+    opacity: 0.5;
+    font-size: 85%;
+    display: inline-block;
+    margin-left: 4.5vh;
+    margin-top: 2vh;
+}
+.twitt-retwitt img {
+    position: absolute;
+    bottom: 8.5vh;
+    right: 4vh;
+}
+.twitt-retwitt h1 {
+    color: white;
+    margin-left: 4vh;
+    margin-top: 1.3vh;
+}
+.twitt-retwitt h4 {
+    display: inline-block;
+    color:hsl(163, 72%, 41%);
+    margin-left: 26vh;
+    position: absolute;
+    bottom: 1.5vh;
+    width: 100%;
+}
+.twitt-likes-up{
+    grid-area: 5 / 2;
+    background-color: hsl(228, 28%, 20%);
+    margin-top: -9vh;
+    height: 13vh;
+    width: 40vh;
+    border-radius: 0.8vh;
+    position: absolute;
+    left: -0.1vh;
+}
+.twitt-likes-up h3 {
+    color: white;
+    opacity: 0.5;
+    font-size: 85%;
+    display: inline-block;
+    margin-left: 4.5vh;
+    margin-top: 2vh;
+}
+.twitt-likes-up img {
+    position: absolute;
+    bottom: 8.5vh;
+    right: 4vh;
+}
+.twitt-likes-up h1 {
+    color: white;
+    margin-left: 4vh;
+    margin-top: 1.3vh;
+}
+.twitt-likes-up h4 {
+    display: inline-block;
+    color:hsl(163, 72%, 41%);
+    margin-left: 26vh;
+    position: absolute;
+    bottom: 1.5vh;
+    width: 100%;
+}
+.yout-likes-down{
+    grid-area: 5 / 3;
+    background-color: hsl(228, 28%, 20%);
+    margin-top: -9vh;
+    height: 13vh;
+    width: 40vh;
+    border-radius: 0.8vh;
+    position: absolute;
+    left: -0.1vh;
+}
+.yout-likes-down h3 {
+    color: white;
+    opacity: 0.5;
+    font-size: 85%;
+    display: inline-block;
+    margin-left: 4.5vh;
+    margin-top: 2vh;
+}
+.yout-likes-down img {
+    position: absolute;
+    bottom: 8.5vh;
+    right: 4vh;
+}
+.yout-likes-down h1 {
+    color: white;
+    margin-left: 4vh;
+    margin-top: 1.3vh;
+}
+.yout-likes-down h4 {
+    display: inline-block;
+    color:hsl(356, 69%, 56%);
+    margin-left: 26vh;
+    position: absolute;
+    bottom: 1.5vh;
+    width: 100%;
+}
+.yout-total-views-down{
+    grid-area: 5 / 4;
+    background-color: hsl(228, 28%, 20%);
+    margin-top: -9vh;
+    height: 13vh;
+    width: 41vh;
+    border-radius: 0.8vh;
+    position: absolute;
+    left: -0.1vh;
+}
+.yout-total-views-down h3 {
+    color: white;
+    opacity: 0.5;
+    font-size: 85%;
+    display: inline-block;
+    margin-left: 4.5vh;
+    margin-top: 2vh;
+}
+.yout-total-views-down img {
+    position: absolute;
+    bottom: 8.5vh;
+    right: 4vh;
+}
+.yout-total-views-down h1 {
+    color: white;
+    margin-left: 4vh;
+    margin-top: 1.3vh;
+}
+.yout-total-views-down h4 {
+    display: inline-block;
+    color:hsl(356, 69%, 56%);
+    margin-left: 26vh;
+    position: absolute;
+    bottom: 1.5vh;
+    width: 100%;
+}
+
